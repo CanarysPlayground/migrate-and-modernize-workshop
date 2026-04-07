@@ -161,7 +161,4 @@ Follow the same prompting pattern — a PR is opened with all deployment configu
 
 <!-- Instructor Guide: This exercise requires repository admin access to configure the MCP server. If participants don't have admin rights, use this as a demo exercise. Emphasize that the same MCP server and tools used in VS Code and CLI are now running in the cloud — the modernization logic is identical, only the execution environment changes. -->
 
-**Java track complete.** For next steps, explore:
-- [Predefined Java Migration Tasks](https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-github-copilot-app-modernization-for-java-predefined-tasks)
-- [Use GitHub Copilot agents](https://docs.github.com/en/copilot/how-tos/use-copilot-agents)
-- [Migrate via custom agent](https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-github-copilot-app-modernization-for-java-custom-agent)
+**Next (Optional)**: [Exercise 08 — Create and Apply a Custom Skill for the Sample Project](exercise-08-custom-skill.md)

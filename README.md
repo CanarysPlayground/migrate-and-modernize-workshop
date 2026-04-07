@@ -66,6 +66,7 @@ You direct Copilot with natural language prompts. Copilot generates all plans, w
 |---|----------|----------------|----------|-------------|
 | 06 | [Copilot CLI & Custom Agent](java/exercise-06-copilot-cli-migration.md) | Copilot CLI + `AppModernization` agent | 15 min | Node.js 22+, npm 10+, Copilot CLI installed |
 | 07 | [Coding Agent *(Enterprise)*](java/exercise-07-coding-agent.md) | Copilot Cloud Agent | 15 min | Repo admin access, GitHub Copilot Enterprise/Business |
+| 08 | [Custom Skill for Sample Project](java/exercise-08-custom-skill.md) | Custom Skills VS Code Extension | 15 min | VS Code only (not IntelliJ); open project from Exercise 01 |
 
 ---
 
@@ -102,6 +103,7 @@ You direct Copilot with natural language prompts. Copilot generates all plans, w
 | **Copilot CLI (.NET)** | Terminal-based .NET migration using `modernize-azure-dotnet` custom agent (`~/.copilot/agents/`) — no IDE required |
 | **Copilot Cloud Agent (Java)** | Cloud-native autonomous Java upgrade via GitHub Agents panel — delegates tasks and opens PRs automatically |
 | **Copilot Cloud Agent (.NET)** | Cloud-native autonomous .NET migration via GitHub Agents panel with `modernize-azure-dotnet.agent.md` in `.github/agents/` |
+| **Custom Skills (Java)** | Project-specific reusable skills stored in `.github/skills/` — encode team migration patterns, apply via Agent Mode, share across the team |
 
 ---
 
@@ -113,7 +115,7 @@ You direct Copilot with natural language prompts. Copilot generates all plans, w
 4. Choose your track:
    - **Java** → start with [java/exercise-01-setup-and-install.md](java/exercise-01-setup-and-install.md)
    - **.NET** → start with [dotnet/exercise-01-setup-and-assess.md](dotnet/exercise-01-setup-and-assess.md)
-5. After completing the mandatory track, pick any optional exercises (06, 07) based on available time
+5. After completing the mandatory track, pick any optional exercises (06, 07, 08) based on available time
 
 ---
 
@@ -126,6 +128,7 @@ You direct Copilot with natural language prompts. Copilot generates all plans, w
 | Java Custom Agent | https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-github-copilot-app-modernization-for-java-custom-agent |
 | Java Coding Agent | https://learn.microsoft.com/en-us/azure/developer/java/migration/github-copilot-app-modernization-for-java-coding-agent |
 | Java Predefined Migration Tasks | https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-github-copilot-app-modernization-for-java-predefined-tasks |
+| Java Custom Skills | https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-github-copilot-app-modernization-for-java-quickstart-create-and-apply-your-own-task |
 | .NET Migration Quickstart (VS Code) | https://learn.microsoft.com/en-us/dotnet/azure/migration/appmod/quickstart |
 | .NET Migration via Copilot CLI | https://learn.microsoft.com/en-us/dotnet/azure/migration/appmod/copilot-cli-support?toc=/azure/developer/github-copilot-app-modernization/toc.json |
 | .NET Coding Agent | https://learn.microsoft.com/en-us/dotnet/azure/migration/appmod/coding-agent-support |
