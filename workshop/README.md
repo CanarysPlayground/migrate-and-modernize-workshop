@@ -86,7 +86,7 @@ You direct Copilot with natural language prompts. Copilot generates all plans, w
 | # | Exercise | Copilot Feature | Duration | Requirement |
 |---|----------|----------------|----------|-------------|
 | 06 | [Copilot CLI Migration](dotnet/exercise-06-copilot-cli-migration.md) | Copilot CLI + `modernize-azure-dotnet` agent | 15 min | Copilot CLI installed |
-| 07 | [Coding Agent *(Enterprise)*](dotnet/exercise-07-coding-agent.md) | Copilot Coding Agent | 15 min | Repo admin access, GitHub Copilot Enterprise/Business, .NET 10 SDK |
+| 07 | [Coding Agent *(Enterprise)*](dotnet/exercise-07-coding-agent.md) | Copilot Cloud Agent | 15 min | Repo admin access, GitHub Copilot Enterprise/Business, .NET 10 SDK |
 
 ---
 

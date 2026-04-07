@@ -94,6 +94,10 @@ When satisfied with all changes, click **Keep** to finalize and accept the migra
 
 <!-- Instructor Guide: Allow extra 5-10 min if the project has unit tests, as the test fix loop can take time. Encourage participants to explore the diff in VS Code Source Control to see the full scope of changes made. -->
 
-> **.NET track complete.** For next steps, explore:
-> - [Predefined Tasks for .NET Migration](https://learn.microsoft.com/en-us/dotnet/azure/migration/appmod/predefined-tasks)
-> - [GitHub Copilot Modernization FAQ](https://learn.microsoft.com/en-us/dotnet/core/porting/github-copilot-app-modernization/faq)
+> **.NET mandatory track complete.** Continue to the optional exercises:
+
+**Next (Optional)**: [Exercise 06 — Migrate .NET to Azure Using Copilot CLI](exercise-06-copilot-cli-migration.md)
+
+Or explore:
+- [Predefined Tasks for .NET Migration](https://learn.microsoft.com/en-us/dotnet/azure/migration/appmod/predefined-tasks)
+- [GitHub Copilot Modernization FAQ](https://learn.microsoft.com/en-us/dotnet/core/porting/github-copilot-app-modernization/faq)

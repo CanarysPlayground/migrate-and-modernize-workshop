@@ -149,8 +149,8 @@ ls .appmod/.migration/
 
 ---
 
-**Next (Optional)**: [Exercise 07 — Migrate .NET Using the Copilot Coding Agent *(Enterprise)*](exercise-07-coding-agent.md)
+**Next (Optional)**: [Exercise 07 — Migrate .NET Using the Copilot Cloud Agent *(Enterprise)*](exercise-07-coding-agent.md)
 
 Or explore:
 - [Predefined .NET Migration Tasks](https://learn.microsoft.com/en-us/dotnet/azure/migration/appmod/predefined-tasks)
-- [GitHub Copilot CLI documentation](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli)
+- [GitHub Copilot CLI documentation](https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli-agents/overview)

@@ -1,18 +1,18 @@
-# Exercise 07 — Migrate .NET to Azure Using the Copilot Coding Agent *(Optional — Enterprise)*
+# Exercise 07 — Migrate .NET to Azure Using the Copilot Cloud Agent *(Optional — Enterprise)*
 
 **Duration**: 15 minutes
-**Copilot Feature**: GitHub Copilot Coding Agent + MCP (`DotNetAppModMcpServer-migrate`)
-**Goal**: Configure the Copilot Coding Agent in your repository, create the `modernize-azure-dotnet` custom agent profile, then delegate a .NET Azure migration entirely to the agent — it works autonomously in the cloud and opens a pull request when done.
+**Copilot Feature**: GitHub Copilot Cloud Agent + MCP (`DotNetAppModMcpServer-migrate`)
+**Goal**: Configure the Copilot Cloud Agent in your repository, create the `modernize-azure-dotnet` custom agent profile, then delegate a .NET Azure migration entirely to the agent — it works autonomously in the cloud and opens a pull request when done.
 
 ---
 
 ## Background
 
-The [Copilot Coding Agent](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent) takes the .NET modernization workflow beyond VS Code and the terminal: the agent runs **entirely in the cloud**, completing migration tasks autonomously like a human developer. You describe the migration, the agent executes the full pipeline — plan, code transformation, build verification, CVE checks, consistency/completeness validation — and opens a pull request for your review.
+The [Copilot Cloud Agent](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent) takes the .NET modernization workflow beyond VS Code and the terminal: the agent runs **entirely in the cloud**, completing migration tasks autonomously like a human developer. You describe the migration, the agent executes the full pipeline — plan, code transformation, build verification, CVE checks, consistency/completeness validation — and opens a pull request for your review.
 
 This unlocks unattended migrations for teams working across multiple repositories, integration into GitHub-based workflows without local tooling, and the ability to delegate large migrations during off-hours.
 
-> ⚠️ **Enterprise/Org Requirement**: Copilot Coding Agent must be **enabled per repository** by a repository **administrator** via **Settings → Copilot → Coding Agent**. Available with GitHub Copilot Pro, Pro+, Business, and Enterprise plans. Not available for managed user account repositories or where explicitly disabled.
+> ⚠️ **Enterprise/Org Requirement**: Copilot Cloud Agent must be **enabled per repository** by a repository **administrator** via **Settings → Copilot → Cloud Agent**. Available with GitHub Copilot Pro, Pro+, Business, and Enterprise plans. Not available for managed user account repositories or where explicitly disabled.
 > **Additional requirement**: A Copilot environment with the **.NET 10 SDK** installed (configured via `copilot-setup-steps.yml`).
 
 ---
@@ -43,7 +43,7 @@ Commit and merge this file into the default branch before proceeding.
 > **Admin access required** for this step.
 
 1. In your GitHub repository, go to **Settings**
-2. Select **Copilot**, then select **Coding Agent**
+2. Select **Copilot**, then select **Cloud Agent**
 3. Under **MCP Configuration**, paste the following JSON and select **Save Configuration**:
 
 ```json
@@ -66,6 +66,7 @@ Commit and merge this file into the default branch before proceeding.
 }
 ```
 
+<!-- TODO: Add screenshot dotnet-coding-agent-mcp.png to assets/dotnet/ -->
 ![Coding Agent MCP Configuration](../assets/dotnet/dotnet-coding-agent-mcp.png)
 
 4. *(Optional)* Set any required environment variables under **Environment → Copilot** in settings. These initialize automatically on the first agentic task invocation.
@@ -146,6 +147,7 @@ Or for observability:
 Migrate this project from file-based logging to OpenTelemetry
 ```
 
+<!-- TODO: Add screenshot dotnet-coding-agent-select.png to assets/dotnet/ -->
 ![Coding Agent Select and Prompt](../assets/dotnet/dotnet-coding-agent-select.png)
 
 After submitting the prompt:
@@ -161,10 +163,12 @@ After submitting the prompt:
 
 Monitor migration progress in the Agents panel:
 
+<!-- TODO: Add screenshot dotnet-coding-agent-progress.png to assets/dotnet/ -->
 ![Coding Agent Migration Progress](../assets/dotnet/dotnet-coding-agent-progress.png)
 
 Review the migration summary when complete:
 
+<!-- TODO: Add screenshot dotnet-coding-agent-completion.png to assets/dotnet/ -->
 ![Coding Agent Migration Summary](../assets/dotnet/dotnet-coding-agent-completion.png)
 
 Open the pull request in your repository and:
@@ -198,7 +202,7 @@ Follow the same workflow — a PR is opened with all infrastructure and deployme
 ## Verify
 
 - [ ] `.github/workflows/copilot-setup-steps.yml` exists with .NET 10 SDK setup steps
-- [ ] MCP server (`DotNetAppModMcpServer-migrate`) is saved in repository Settings → Copilot → Coding Agent
+- [ ] MCP server (`DotNetAppModMcpServer-migrate`) is saved in repository Settings → Copilot → Cloud Agent
 - [ ] `modernize-azure-dotnet.agent.md` exists in `.github/agents/` and appears in the agent dropdown
 - [ ] Migration prompt submitted and a new pull request was created by Copilot
 - [ ] PR includes code changes, updated NuGet dependencies, and CVE fixes
@@ -219,5 +223,5 @@ Follow the same workflow — a PR is opened with all infrastructure and deployme
 
 **.NET track complete.** For next steps, explore:
 - [All .NET predefined migration tasks](https://learn.microsoft.com/en-us/dotnet/azure/migration/appmod/predefined-tasks)
-- [Using GitHub Copilot Coding Agent](https://docs.github.com/en/copilot/how-tos/use-copilot-agents)
+- [Using GitHub Copilot Cloud Agent](https://docs.github.com/en/copilot/how-tos/use-copilot-agents)
 - [Provide feedback](https://aka.ms/ghcp-appmod/feedback)
