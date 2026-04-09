@@ -67,7 +67,7 @@ Commit and merge this file into the default branch before proceeding.
 ```
 
 <!-- TODO: Add screenshot dotnet-coding-agent-mcp.png to assets/dotnet/ -->
-![Coding Agent MCP Configuration](../assets/dotnet/dotnet-coding-agent-mcp.png)
+![Coding Agent MCP Configuration](./workshop/assets/dotnet/dotnet-coding-agent-mcp.png)
 
 4. *(Optional)* Set any required environment variables under **Environment → Copilot** in settings. These initialize automatically on the first agentic task invocation.
 5. Select **Save Configuration**.
@@ -148,7 +148,7 @@ Migrate this project from file-based logging to OpenTelemetry
 ```
 
 <!-- TODO: Add screenshot dotnet-coding-agent-select.png to assets/dotnet/ -->
-![Coding Agent Select and Prompt](../assets/dotnet/dotnet-coding-agent-select.png)
+![Coding Agent Select and Prompt](./workshop/assets/dotnet/dotnet-coding-agent-select.png)
 
 After submitting the prompt:
 - Copilot starts a **new session** and opens a **new pull request** in your repository
@@ -164,12 +164,12 @@ After submitting the prompt:
 Monitor migration progress in the Agents panel:
 
 <!-- TODO: Add screenshot dotnet-coding-agent-progress.png to assets/dotnet/ -->
-![Coding Agent Migration Progress](../assets/dotnet/dotnet-coding-agent-progress.png)
+![Coding Agent Migration Progress](./workshop/assets/dotnet/dotnet-coding-agent-progress.png)
 
 Review the migration summary when complete:
 
 <!-- TODO: Add screenshot dotnet-coding-agent-completion.png to assets/dotnet/ -->
-![Coding Agent Migration Summary](../assets/dotnet/dotnet-coding-agent-completion.png)
+![Coding Agent Migration Summary](./workshop/assets/dotnet/dotnet-coding-agent-completion.png)
 
 Open the pull request in your repository and:
 1. Review the **Files Changed** tab — inspect dependency changes, code transformations, config migrations
