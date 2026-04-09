@@ -54,19 +54,19 @@ You direct Copilot with natural language prompts. Copilot generates all plans, w
 
 | # | Exercise | Copilot Feature | Duration |
 |---|----------|----------------|----------|
-| 01 | [Setup and Install the Extension](java/exercise-01-setup-and-install.md) | Copilot Modernization Extension | 10 min |
-| 02 | [Launch Agent Mode and Generate the Upgrade Plan](java/exercise-02-launch-agent-and-plan.md) | Copilot Agent Mode | 10 min |
-| 03 | [Apply Code Changes with OpenRewrite](java/exercise-03-apply-code-changes.md) | Agent Mode + OpenRewrite | 15 min |
-| 04 | [CVE and Code Behavior Validation](java/exercise-04-cve-and-behavior-checks.md) | Security & Consistency Validation | 10 min |
-| 05 | [Review the Upgrade Summary](java/exercise-05-review-summary.md) | Upgrade Summary Report | 5 min |
+| 01 | [Setup and Install the Extension](./workshop/java/exercise-01-setup-and-install.md) | Copilot Modernization Extension | 10 min |
+| 02 | [Launch Agent Mode and Generate the Upgrade Plan](./workshop/java/exercise-02-launch-agent-and-plan.md) | Copilot Agent Mode | 10 min |
+| 03 | [Apply Code Changes with OpenRewrite](./workshop/java/exercise-03-apply-code-changes.md) | Agent Mode + OpenRewrite | 15 min |
+| 04 | [CVE and Code Behavior Validation](./workshop/java/exercise-04-cve-and-behavior-checks.md) | Security & Consistency Validation | 10 min |
+| 05 | [Review the Upgrade Summary](./workshop/java/exercise-05-review-summary.md) | Upgrade Summary Report | 5 min |
 
 #### Optional (~30 minutes — pick any, in any order)
 
 | # | Exercise | Copilot Feature | Duration | Requirement |
 |---|----------|----------------|----------|-------------|
-| 06 | [Copilot CLI & Custom Agent](java/exercise-06-copilot-cli-migration.md) | Copilot CLI + `AppModernization` agent | 15 min | Node.js 22+, npm 10+, Copilot CLI installed |
-| 07 | [Coding Agent *(Enterprise)*](java/exercise-07-coding-agent.md) | Copilot Cloud Agent | 15 min | Repo admin access, GitHub Copilot Enterprise/Business |
-| 08 | [Custom Skill for Sample Project](java/exercise-08-custom-skill.md) | Custom Skills VS Code Extension | 15 min | VS Code only (not IntelliJ); open project from Exercise 01 |
+| 06 | [Copilot CLI & Custom Agent](./workshop/java/exercise-06-copilot-cli-migration.md) | Copilot CLI + `AppModernization` agent | 15 min | Node.js 22+, npm 10+, Copilot CLI installed |
+| 07 | [Coding Agent *(Enterprise)*](./workshop/java/exercise-07-coding-agent.md) | Copilot Cloud Agent | 15 min | Repo admin access, GitHub Copilot Enterprise/Business |
+| 08 | [Custom Skill for Sample Project](./workshop/java/exercise-08-custom-skill.md) | Custom Skills VS Code Extension | 15 min | VS Code only (not IntelliJ); open project from Exercise 01 |
 
 ---
 
@@ -76,18 +76,18 @@ You direct Copilot with natural language prompts. Copilot generates all plans, w
 
 | # | Exercise | Copilot Feature | Duration |
 |---|----------|----------------|----------|
-| 01 | [Setup, Install, and Assess](dotnet/exercise-01-setup-and-assess.md) | Assessment + Modernization Extension | 15 min |
-| 02 | [Chat-Based Migration with AppModernization-DotNet Agent](dotnet/exercise-02-chat-based-migration.md) | AppModernization-DotNet Custom Agent | 10 min |
-| 03 | [Plan and Progress Tracker](dotnet/exercise-03-plan-and-progress.md) | Migration Plan Review | 10 min |
-| 04 | [Code Remediation](dotnet/exercise-04-code-remediation.md) | Agent Mode Code Remediation | 15 min |
-| 05 | [Validation and Summary](dotnet/exercise-05-validation-and-summary.md) | 5-Step Validation Loop | 10 min |
+| 01 | [Setup, Install, and Assess](./workshop/dotnet/exercise-01-setup-and-assess.md) | Assessment + Modernization Extension | 15 min |
+| 02 | [Chat-Based Migration with AppModernization-DotNet Agent](./workshop/dotnet/exercise-02-chat-based-migration.md) | AppModernization-DotNet Custom Agent | 10 min |
+| 03 | [Plan and Progress Tracker](./workshop/dotnet/exercise-03-plan-and-progress.md) | Migration Plan Review | 10 min |
+| 04 | [Code Remediation](./workshop/dotnet/exercise-04-code-remediation.md) | Agent Mode Code Remediation | 15 min |
+| 05 | [Validation and Summary](./workshop/dotnet/exercise-05-validation-and-summary.md) | 5-Step Validation Loop | 10 min |
 
 #### Optional (~30 minutes — pick any, in any order)
 
 | # | Exercise | Copilot Feature | Duration | Requirement |
 |---|----------|----------------|----------|-------------|
-| 06 | [Copilot CLI Migration](dotnet/exercise-06-copilot-cli-migration.md) | Copilot CLI + `modernize-azure-dotnet` agent | 15 min | Copilot CLI installed |
-| 07 | [Coding Agent *(Enterprise)*](dotnet/exercise-07-coding-agent.md) | Copilot Cloud Agent | 15 min | Repo admin access, GitHub Copilot Enterprise/Business, .NET 10 SDK |
+| 06 | [Copilot CLI Migration](./workshop/dotnet/exercise-06-copilot-cli-migration.md) | Copilot CLI + `modernize-azure-dotnet` agent | 15 min | Copilot CLI installed |
+| 07 | [Coding Agent *(Enterprise)*](./workshop/dotnet/exercise-07-coding-agent.md) | Copilot Cloud Agent | 15 min | Repo admin access, GitHub Copilot Enterprise/Business, .NET 10 SDK |
 
 ---
 
@@ -113,7 +113,7 @@ You direct Copilot with natural language prompts. Copilot generates all plans, w
 2. Ensure **GitHub Copilot** and **GitHub Copilot Chat** extensions are installed and signed in
 3. Open the Copilot Chat panel (`Ctrl+Alt+I`)
 4. Choose your track:
-   - **Java** → start with [java/exercise-01-setup-and-install.md](java/exercise-01-setup-and-install.md)
+   - **Java** → start with [java/exercise-01-setup-and-install.md](./workshop/java/exercise-01-setup-and-install.md)
    - **.NET** → start with [dotnet/exercise-01-setup-and-assess.md](dotnet/exercise-01-setup-and-assess.md)
 5. After completing the mandatory track, pick any optional exercises (06, 07, 08) based on available time
 
