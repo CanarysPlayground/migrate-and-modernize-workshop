@@ -20,6 +20,7 @@ This gives you a complete picture of the migration scope before a single line of
 2. Search for **GitHub Copilot modernization**
 3. Install the extension published by Microsoft (`vscjava.migrate-java-to-azure`)
 4. **Restart VS Code** after installation
+5. Install the package `dotnet tool install -g dotnet-appcat` from the terminal to enable the assessment feature. Restart the terminal after installation.
 
 > **Tip**: Sign in to GitHub with an active Copilot subscription before this step. Any plan (Free, Pro, Business, Enterprise) works.
 
@@ -56,6 +57,12 @@ In VS Code, open the **Contoso University** solution folder from the cloned repo
 2. Click **Run Assessment** in the upper-right corner of the Assessment reports page
 3. The assessment automatically analyzes the project for migration readiness
 
+> **Tip**: If you have the `dotnet-appcat` tool installed, you can also run the assessment from the terminal with the below command and then load the report in the extension with the "Import" button.
+
+```cmd
+appcat analyze contosoUniversity.sln --target any --serializer APPMODJSON --code --privacyMode Protected --non-interactive --report .\.github\appmod\assessment\reports\report-contoso\report.json
+```
+
 ![Assessment In Progress](../assets/dotnet/assessment-in-process.png)
 
 4. When the assessment completes, a comprehensive report and list of migration tasks appear
@@ -66,6 +73,10 @@ The report shows:
 - Migration challenge areas with impact level (High / Medium / Low)
 - Prioritized list of migration tasks with recommended Azure targets
 - Links to Azure service documentation for each migration task
+
+> **Note**: The assessment may take several minutes to complete, especially on larger projects. It’s doing a deep analysis of your codebase and dependencies to identify all migration challenges.
+
+
 
 ---
 
