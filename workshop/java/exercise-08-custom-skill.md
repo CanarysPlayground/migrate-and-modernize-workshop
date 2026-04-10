@@ -46,7 +46,7 @@ Save the output as a file named guide.md in the project root.
 2. Hover over the **TASKS** section header — a **Create a Custom Skill** button (pencil icon) appears
 3. Select **Create a Custom Skill**
 
-   ![Create a Custom Skill button](../assets/java/custom-skill-create.png)
+   ![Create a Custom Skill button](../assets/java/create-custom-skill.png)
 
 4. A `SKILL.md` editor opens. Fill in the three fields:
 
