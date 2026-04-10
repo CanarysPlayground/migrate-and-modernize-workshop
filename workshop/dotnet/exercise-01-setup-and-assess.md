@@ -59,6 +59,8 @@ In VS Code, open the **Contoso University** solution folder from the cloned repo
 
 > **Tip**: If you have the `dotnet-appcat` tool installed, you can also run the assessment from the terminal with the below command and then load the report in the extension with the "Import" button.
 
+Run the below command from the terminal in the project directory to start the assessment:
+
 ```cmd
 appcat analyze contosoUniversity.sln --target any --serializer APPMODJSON --code --privacyMode Protected --non-interactive --report .\.github\appmod\assessment\reports\report-contoso\report.json
 ```
