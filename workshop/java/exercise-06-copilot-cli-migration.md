@@ -177,7 +177,7 @@ To select the agent explicitly instead of embedding it in the prompt:
 Then pick `AppModernization` from the list, and describe your migration task.
 
 <!-- TODO: Add screenshot cli-select-custom-agent.png to assets/java/ -->
-![Select Custom Agent](../assets/java/cli-select-custom-agent.png)
+![Select Custom Agent](../assets/java/select-custom-agent.png)
 
 ---
 
