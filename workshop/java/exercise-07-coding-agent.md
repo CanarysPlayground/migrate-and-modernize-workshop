@@ -43,7 +43,7 @@ This is particularly powerful for teams who want to delegate modernization tasks
 ```
 
 <!-- TODO: Add screenshot coding-agent-mcp.png to assets/java/ -->
-![Coding Agent MCP Configuration](../assets/java/coding-agent-mcp.png)
+![Coding Agent MCP Configuration](../assets/java/mcp.png)
 
 4. *(Optional)* If environment variables are required, set them under **Environment → Copilot** in settings. These initialize automatically on the first agentic task invocation in this repository.
 
@@ -56,7 +56,7 @@ This is particularly powerful for teams who want to delegate modernization tasks
 3. The panel shows a prompt box and a list of previous agent sessions
 
 <!-- TODO: Add screenshot coding-agent-panel.png to assets/java/ -->
-![Coding Agent Agents Panel](../assets/java/coding-agent-panel.png)
+![Coding Agent Agents Panel](../assets/java/agent-panel.png)
 
 ---
 
@@ -69,7 +69,7 @@ Upgrade this project to JDK 21 and Spring Boot 3.2
 ```
 
 <!-- TODO: Add screenshot coding-agent-upgrade-input.png to assets/java/ -->
-![Coding Agent Upgrade Input](../assets/java/coding-agent-upgrade-input.png)
+![Coding Agent Upgrade Input](../assets/java/upgrade-input.png)
 
 After submitting the prompt:
 - Copilot starts a **new session** and opens a **new pull request** in your repository
@@ -84,12 +84,12 @@ The agent executes the full pipeline:
 5. Runs behavioral consistency checks
 
 <!-- TODO: Add screenshot coding-agent-upgrade-progress.png to assets/java/ -->
-![Coding Agent Upgrade Progress](../assets/java/coding-agent-upgrade-progress.png)
+![Coding Agent Upgrade Progress](../assets/java/upgrade-progress.png)
 
 When complete, a concise upgrade summary is displayed and you are **added as a reviewer** on the pull request (triggering a GitHub notification):
 
 <!-- TODO: Add screenshot coding-agent-upgrade-completion.png to assets/java/ -->
-![Coding Agent Upgrade Summary](../assets/java/coding-agent-upgrade-completion.png)
+![Coding Agent Upgrade Summary](../assets/java/upgrade-completion.png)
 
 ---
 
@@ -113,17 +113,17 @@ Run migration task for scenario Migrate Cassandra integration to Azure SDK using
 ```
 
 <!-- TODO: Add screenshot coding-agent-migrate-input.png to assets/java/ -->
-![Coding Agent Migration Input](../assets/java/coding-agent-migrate-input.png)
+![Coding Agent Migration Input](../assets/java/migrate-input.png)
 
 Monitor progress in the Agents panel:
 
 <!-- TODO: Add screenshot coding-agent-migrate-progress.png to assets/java/ -->
-![Coding Agent Migration Progress](../assets/java/coding-agent-migrate-progress.png)
+![Coding Agent Migration Progress](../assets/java/migrate-progress.png)
 
 Review the migration summary when complete:
 
 <!-- TODO: Add screenshot coding-agent-migrate-completion.png to assets/java/ -->
-![Coding Agent Migration Summary](../assets/java/coding-agent-migrate-completion.png)
+![Coding Agent Migration Summary](../assets/java/migrate-completion.png)
 
 > **All predefined Java migration scenarios**: See [Predefined tasks for GitHub Copilot modernization for Java](https://learn.microsoft.com/en-us/azure/developer/java/migration/migrate-github-copilot-app-modernization-for-java-predefined-tasks#task-list).
 
