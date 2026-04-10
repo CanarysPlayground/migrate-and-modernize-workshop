@@ -1,14 +1,14 @@
-# Exercise 02 — Chat-Based Migration with the AppModernization-DotNet Agent
+# Exercise 02 — Chat-Based Migration with the Modernize-DotNet Agent
 
 **Duration**: 10 minutes
-**Copilot Feature**: AppModernization-DotNet Custom Agent
-**Goal**: Select the AppModernization-DotNet custom agent and start a migration using a natural language prompt.
+**Copilot Feature**: Modernize-DotNet Custom Agent
+**Goal**: Select the Modernize-DotNet custom agent and start a migration using a natural language prompt.
 
 ---
 
 ## Background
 
-GitHub Copilot modernization for .NET exposes a **custom agent** called `AppModernization-DotNet` that is specifically optimized for .NET-to-Azure migration scenarios. Unlike general Copilot chat, this agent has deep, built-in knowledge of:
+GitHub Copilot modernization for .NET exposes a **custom agent** called `Modernize-DotNet` that is specifically optimized for .NET-to-Azure migration scenarios. Unlike general Copilot chat, this agent has deep, built-in knowledge of:
 - Azure service equivalents for common .NET dependencies (e.g., RabbitMQ → Azure Service Bus, SQL Server → Azure SQL)
 - Microsoft best practices for .NET-to-Azure migrations
 - Predefined migration tasks for the most common enterprise scenarios
@@ -21,11 +21,11 @@ The agent uses **Claude Sonnet 4.5** by default for best results. It orchestrate
 
 1. Click the **chat icon** in the VS Code Activity Bar to open the Copilot chat window
 2. Locate the **agent selector dropdown** at the top of the chat input box
-3. Select **AppModernization-DotNet** from the list
+3. Select **Modernize-DotNet** from the list
 
 ![Select Custom Agent](../assets/dotnet/custom-agent.png)
 
-> **Tip**: If `AppModernization-DotNet` does not appear, confirm the GitHub Copilot modernization extension is installed and VS Code was fully restarted.
+> **Tip**: If `Modernize-DotNet` does not appear, confirm the GitHub Copilot modernization extension is installed and VS Code was fully restarted.
 
 ---
 
@@ -59,7 +59,7 @@ The agent may request permission to use knowledge base tools in the **Model Cont
 
 ## Step 4 — Monitor the Agent Starting the Migration
 
-The `AppModernization-DotNet` agent will:
+The `Modernize-DotNet` agent will:
 1. Analyze your code for the source technology
 2. Create `plan.md` in `.github/appmod/code-migration/<branch-name>/`
 3. Begin planning code, dependency, and configuration changes
@@ -70,7 +70,7 @@ At each step, click **Continue** to proceed and **Keep** to accept changes.
 
 ## Verify
 
-- [ ] `AppModernization-DotNet` agent is selected in the chat agent dropdown
+- [ ] `Modernize-DotNet` agent is selected in the chat agent dropdown
 - [ ] Migration prompt was entered and the agent began analyzing the project
 - [ ] MCP tool permissions were granted when prompted
 - [ ] `plan.md` creation started (visible in VS Code Explorer)
@@ -79,7 +79,7 @@ At each step, click **Continue** to proceed and **Keep** to accept changes.
 
 ## Key Takeaway
 
-> The `AppModernization-DotNet` custom agent turns a complex multi-step Azure migration into a single natural language prompt — you direct the migration, Copilot executes it end-to-end.
+> The `Modernize-DotNet` custom agent turns a complex multi-step Azure migration into a single natural language prompt — you direct the migration, Copilot executes it end-to-end.
 
 ---
 
